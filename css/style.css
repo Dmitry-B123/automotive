@@ -1,0 +1,493 @@
+@font-face {
+   font-family: "Chocolatey";
+   src: url(../fonts/Quite\ Chocolatey.ttf);
+}
+
+@font-face {
+   font-family: "monotypecorsiva";
+   src: url(../fonts/monotypecorsiva.ttf);
+}
+
+@font-face {
+   font-family: "couture-bldit";
+   src: url(../fonts/couture-bldit.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=PT+Serif&display=swap');
+
+html {
+   font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+.container {
+   max-width: 1000px;
+   margin: 0 auto;
+}
+
+/* header */
+
+.header {
+   background: url(../img/background.jpg) red no-repeat;
+   background-size: cover;
+   padding-top: 38px;
+   padding-bottom: 158px;
+}
+
+.header__inner {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.header__logo {
+   font-family: "Chocolatey";
+   color: #ffffff;
+   font-size: 5.5rem;
+   font-weight: 400;
+   line-height: 2.02px;
+   letter-spacing: -1.2px;
+}
+
+.header__list {
+   display: flex;
+   list-style: none;
+}
+
+.header__list li {
+   transition: 0.1s;
+   margin-left: 10px;
+   padding: 10px 15px;
+}
+
+.header__list li a {
+   color: #ffffff;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 1.125rem;
+   line-height: 1.375rem;
+   letter-spacing: -0.36px;
+   text-decoration: none;
+}
+
+.header__list li:hover {
+   background-color: #130e27;
+   border-radius: 10px;
+}
+
+.header__info {
+   margin-top: 138px;
+}
+
+.header__title {
+   font-family: 'Montserrat', sans-serif;
+   color: #130e27;
+   font-size: 5.625rem;
+   font-weight: 700;
+   line-height: 5rem;
+   text-align: left;
+   text-transform: uppercase;
+   letter-spacing: -1.8px;
+}
+
+.header__title span {
+   display: block;
+   color: #ffffff;
+}
+
+.header__text {
+   font-family: 'PT Serif', serif;
+   color: #ffffff;
+   font-size: 1.25rem;
+   line-height: 1.75rem;
+   letter-spacing: -0.4px;
+   text-align: left;
+   max-width: 466px;
+}
+
+/* header menu */
+
+.header__menu button {
+   background-color: #cc291a;
+   opacity: 0.7;
+   border: none;
+   padding: 20px;
+   display: none;
+   cursor: pointer;
+}
+
+.header__menu button span {
+   display: block;
+   width: 25px;
+   height: 3px;
+   background-color: #000;
+   position: relative;
+}
+
+.header__menu button span::before {
+   display: block;
+   content: "";
+   width: 25px;
+   height: 3px;
+   background-color: #000;
+   position: absolute;
+   transform: translateY(-10px);
+}
+
+.header__menu button span::after {
+   display: block;
+   content: "";
+   width: 25px;
+   height: 3px;
+   background-color: #000;
+   position: absolute;
+   transform: translateY(10px);
+}
+
+.menu {
+   display: none;
+}
+
+.menu,
+.menu__list {
+   padding-left: 0;
+}
+
+.menu__list li {
+   list-style: none;
+   padding: 30px;
+   text-align: center;
+}
+
+.menu__list li a {
+   color: #ffffff;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 1.125rem;
+   line-height: 1.375rem;
+   letter-spacing: -0.36px;
+   text-decoration: none;
+}
+
+.active {
+   display: block;
+}
+
+/* services */
+
+.services__inner {
+   padding: 45px 0 64px;
+}
+
+.services__title {
+   font-family: "couture-bldit";
+   color: #130e27;
+   font-size: 50px;
+   font-weight: 700;
+   line-height: 80px;
+   text-align: left;
+   text-transform: uppercase;
+   letter-spacing: -1px;
+   margin-bottom: 90px;
+}
+
+.services__title span {
+   color: #d03958;
+}
+
+.services__row {
+   display: flex;
+   justify-content: space-between;
+}
+
+.services__item {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   margin-right: 100px;
+}
+
+.services__item:last-child {
+   margin-right: 0;
+}
+
+.services__item p {
+   margin-top: 30px;
+   font-family: 'PT Serif', serif;
+   color: #161616;
+   font-size: 20px;
+   letter-spacing: -0.4px;
+   line-height: 28px;
+   text-align: center;
+}
+
+.service__icon-1 {
+   width: 163px;
+   height: 142px;
+}
+
+.service__icon-2 {
+   width: 137px;
+   height: 137px;
+}
+
+.service__icon-3 {
+   width: 116px;
+   height: 155px;
+}
+
+.service__icon-4 {
+   width: 150px;
+   height: 150px;
+}
+
+/* story */
+
+.story {
+   background-color: #130e27;
+}
+
+.story__inner {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 30px 0;
+}
+
+.story__text {
+   font-family: 'PT Serif', serif;
+   color: #ffffff;
+   font-size: 20px;
+   line-height: 28px;
+   text-align: left;
+   letter-spacing: -0.4px;
+   max-width: 600px;
+}
+
+.story__button {
+   background-color: #c62314;
+   color: #ffffff;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 22px;
+   text-align: center;
+   text-transform: uppercase;
+   letter-spacing: -0.44px;
+   line-height: 28px;
+   padding: 20px 65px;
+   border-radius: 5px;
+   border: none;
+}
+
+.story__button:hover {
+   cursor: pointer;
+}
+
+/* PRICING */
+
+.pricing {
+   background-color: #efefef;
+}
+
+.pricing__inner {
+   padding: 65px 0;
+}
+
+.pricing__title {
+   color: #130e27;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 50px;
+   font-weight: 700;
+   line-height: 80px;
+   text-align: center;
+   text-transform: uppercase;
+   letter-spacing: -1px;
+   margin: 0 0 57px;
+}
+
+.pricing__row {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.pricing__item {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   background-color: #ffffff;
+   font-family: 'PT Serif', serif;
+   color: #161616;
+   line-height: 28px;
+   letter-spacing: -0.4px;
+   text-align: center;
+   padding: 35px 55px 10px;
+   min-width: 300px;
+}
+
+.pricing__item h4 {
+   letter-spacing: -0.44px;
+   font-weight: 400;
+   margin: 0;
+}
+
+.price {
+   font-family: 'Montserrat', sans-serif;
+   color: #c62314;
+   font-size: 60px;
+   font-weight: 700;
+   text-transform: uppercase;
+   letter-spacing: -1.2px;
+   margin: 41px 0 33px;
+}
+
+.pricing__btn {
+   padding: 15px 50px;
+   margin-top: 40px;
+   margin-bottom: 10px;
+   background-color: #130e27;
+   color: #ffffff;
+   font-size: 22px;
+   line-height: 28px;
+   text-transform: uppercase;
+   letter-spacing: -0.44px;
+   border-radius: 5px;
+   border: none;
+   font-family: 'Montserrat', sans-serif;
+   cursor: pointer;
+}
+
+.pricing__btn:active {
+   background-color: #c62314;
+}
+
+/* footer */
+
+.footer {
+   background-color: #130e27;
+}
+
+.footer__inner {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 80px 0 90px;
+}
+
+.footer__right {
+   font-family: 'PT Serif', serif;
+   color: #ffffff;
+   line-height: 22px;
+   font-size: 20px;
+   letter-spacing: -0.4px;
+}
+
+.footer__right span {
+   color: #c62314;
+}
+
+.footer__logo {
+   color: #c62314;
+   font-size: 64px;
+   font-family: "Chocolatey";
+   line-height: 23.6px;
+   letter-spacing: -1.2px;
+}
+
+@media screen and (max-width: 1100px) {
+   .container {
+      max-width: 900px;
+      margin: 0 auto;
+   }
+
+   .pricing__row {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   .pricing__item {
+      margin-bottom: 30px;
+   }
+}
+
+@media screen and (max-width: 992px) {
+   .services__title {
+      text-align: center;
+   }
+
+   .services__row {
+      flex-wrap: wrap;
+   }
+
+   .services__item {
+      margin-right: 0;
+      margin-bottom: 20px;
+      flex-basis: 50%;
+   }
+}
+
+@media screen and (max-width: 945px) {
+   .header__list {
+      display: none;
+   }
+
+   .header__inner {
+      display: flex;
+      justify-content: center;
+   }
+
+   .header__info h1,
+   .header__info p {
+      text-align: center;
+      max-width: 900px;
+   }
+
+   .story__inner,
+   .footer__inner {
+      flex-direction: column;
+   }
+
+   .story__text {
+      text-align: center;
+   }
+
+   .footer__right {
+      margin-bottom: 50px;
+      text-align: center;
+   }
+
+   .header__menu button {
+      display: block;
+      margin-left: 50px;
+   }
+}
+
+@media screen and (max-width: 576px) {
+   .services__row {
+      justify-content: center;
+   }
+
+   .services__item {
+      flex-basis: 100%;
+   }
+
+   .header__logo {
+      font-size: 4rem;
+   }
+
+   .header__menu button {
+      display: block;
+      margin-left: 0;
+   }
+}
+
+@media screen and (max-width: 300px) {
+   .header__logo {
+      font-size: 3rem;
+   }
+}
